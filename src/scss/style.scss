@@ -1,6 +1,14 @@
-$colorY: orange;
+$colorY: rgb(241, 174, 48);
 $font:verdana;
 $colorQuadros:#a94e0b;
+@mixin resolucao1{
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    border: 6px solid $colorQuadros;
+    position: absolute;
+    clear:both;
+}
 body{
     background-image: url('../img/fundo.jpg');
     background-repeat: no-repeat;
@@ -9,6 +17,7 @@ body{
     font-family:$font;
 }
     .container {
+        z-index:9999;
         width: 100%;
         margin: 0 auto;
         article{
@@ -16,6 +25,11 @@ body{
             padding: 50px;
             h1{
                 color:#239fde;
+            }
+            p{
+                span{
+                    background:$colorY;
+                }
             }
         }
         
@@ -88,51 +102,31 @@ body{
     background: $colorY;
     position: relative;
         a{
-            div.quadro.btnHomer{
-                width: 110px;
-                height: 110px;
-                background: url(../img/homer.jpg);
-                background-size: cover;
-                border: 6px solid $colorQuadros;
-                position: absolute;
+            div.quadro.btnHomer{      
+                background: url(../img/homer.jpg);        
                 left: 20%;
                 bottom: 0;
-                clear:both;
+                @include resolucao1;
             } 
             div.quadro.btnMarge{
-                width: 110px;
-                height: 110px;
                 background: url(../img/Marj.jpg);
-                background-size: cover;
-                border: 6px solid $colorQuadros;
-                position: absolute;
                 left: 33%;
                 top: -11px;
-                clear:both;
+                @include resolucao1;
             } 
 
             div.quadro.btnLisa{
-                width: 110px;
-                height: 110px;
                 background: url(../img/Lisa.jpg);
-                background-size: cover;
-                border: 6px solid $colorQuadros;
-                position: absolute;
                 left: 45%;
                 top: 0;
-                clear:both;
+                @include resolucao1;
             } 
 
             div.quadro.btnBart{
-                width: 110px;
-                height: 110px;
                 background: url(../img/Bart.jpg);
-                background-size: cover;
-                border: 6px solid #a94e0b;
-                position: absolute;
                 right: 34%;
                 bottom: 0;
-                clear: both;
+                @include resolucao1;
             } 
 
             div.quadro.btnMaggie{
