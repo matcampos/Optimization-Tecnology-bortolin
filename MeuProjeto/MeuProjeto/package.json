@@ -1,0 +1,21 @@
+{
+  "name": "meuprojeto",
+  "version": "1.0.0",
+  "description": "meu projeto .",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "author": "renato",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.2"
+  }
+}
