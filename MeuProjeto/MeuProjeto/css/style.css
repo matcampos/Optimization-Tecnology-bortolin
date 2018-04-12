@@ -11,3 +11,34 @@
 body.container.black{
   background:#000;
 }
+@media (min-width: 768px){
+.navbar {
+    border-radius: 0px !important;
+}
+}
+button.btn.btn-default.pull-right.m-b-20 {
+  margin-top: -30px;
+}
+p:nth-child(2) {
+  margin-bottom: 43px;
+}
+li{
+  display:inline;
+}
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+  float: right;
+}
+.w-100 {
+  width: 100%!important;
+  height: 400px;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+   margin-right: 0px; 
+   margin-left: 0px; 
+}
+
