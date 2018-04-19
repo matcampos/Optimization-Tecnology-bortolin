@@ -1,0 +1,6 @@
+Implemente a função wesley_safadao que recebe uma data de nascimento (dia, mês e ano) e calcule a porcentagem de anjo e a porcentagem de vagabundo de uma pessoa que nasceu na data de entrada. 
+Os cálculos obedecem a seguinte fórmula:
+	safadeza = somatorio(mes)+(ano/100)*(50-dia)
+	anjo = 100 - safadeza
+
+A sua função não retorna nada, apenas escreve na tela a % de safadeza e a % de anjo da pessoa nascida naquela data.
