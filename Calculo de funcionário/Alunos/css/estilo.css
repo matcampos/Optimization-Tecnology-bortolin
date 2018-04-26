@@ -1,0 +1,32 @@
+.light-blue-background{
+    background: lightblue;
+    padding:10px;
+}
+.pd{
+    padding: 4%;
+    background: lightgray;
+}
+.pd-lr{
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+.img{
+    width: 100%;
+}
+.m-t-20{
+    margin-top:20px !important;
+}
+.alert{
+    border: 1px solid #e68484;
+}
+.pd-t{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.m-bottom{
+    margin-bottom:30px;
+}
+#alert{
+    display:none;
+}

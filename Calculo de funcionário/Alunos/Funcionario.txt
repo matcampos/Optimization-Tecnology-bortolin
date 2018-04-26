@@ -1,0 +1,7 @@
+Uma empresa tem para um determinado funcionário uma ficha contendo o nome, número de horastrabalhadas e o número de dependentes de um funcionário. Considerando que a empresa paga R$ 98,00 por hora e R$ 80,00 por dependentes, apresentar: 
+Campos a serem apresentados
+- Nome do funcionário 
+- Salário bruto (sem descontos)
+- Desconto de IR (0.05)
+- Desconto de INSS (0.085)
+- Salário Final

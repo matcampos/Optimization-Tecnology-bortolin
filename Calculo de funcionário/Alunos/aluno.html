@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>nome da página</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<script src='js/script.js'></script>
+</head>
+<body>
+	
+<!-- 
+	Implemente a função wesley_safadao que recebe uma data de nascimento (dia, mês e ano) e calcule a porcentagem de anjo e a porcentagem de vagabundo de uma pessoa que nasceu na data de entrada. 
+	Os cálculos obedecem a seguinte fórmula:
+		safadeza = somatorio(mes)+(ano/100)*(50-dia)
+		anjo = 100 - safadeza
+	A sua função não retorna nada, apenas escreve na tela a % de safadeza e a % de anjo da pessoa nascida naquela data. 
+-->
+<div class="wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 pd">
+				<div class="card">
+					<h1 class="card-title pd-lr">Cálculo de funcionário</h1>
+					<div class="card-body">
+						<div class="col-md-6">
+							<div class="light-blue-background">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsa, laborum doloribus illum in officiis. Beatae, quidem aut. Officia, commodi illo reiciendis soluta tempore veniam sint sequi nobis eius quas?</p>
+								<hr>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsa, laborum doloribus illum in officiis. Beatae, quidem aut. Officia, commodi illo reiciendis soluta tempore veniam sint sequi nobis eius quas?</p>
+								<hr>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsa, laborum doloribus illum in officiis. Beatae, quidem aut. Officia, commodi illo reiciendis soluta tempore veniam sint sequi nobis eius quas?</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<img src="https://p2.trrsf.com/image/fget/cf/460/0/images.terra.com/2018/01/10/a345f087d3ee225441b329403b24179a.jpg" class="img" alt="Safadão">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 m-t-20 m-bottom">
+					<div class="col-md-3">
+						<div class="form-action m-t-20">
+							<label for="">Nome</label>
+							<input type="text" name="name" class="form-control" maxlength="20" id="name" required/>
+						</div>
+						<div class="form-action m-t-20">
+							<label for="">Quantidade de horas</label>
+							<input type="number" name="qtHoras" maxlength="3" class="form-control" id="qtHoras" required/>
+						</div>
+						<div class="form-action m-t-20">
+							<label for="">Dependentes</label>
+							<input type="number" maxlength="3" name="dependentes" class="form-control" id="dependentes" required/>
+						</div>
+						<div class="form-action m-t-20">
+							<button onClick="getFields()" class="btn btn-primary">Calcular</button>
+						</div>
+					</div>
+				<div class="col-md-6 pull-right">
+				<div class="alert-danger pd-lr pd-t m-t-20 alert" id="alert"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
