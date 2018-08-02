@@ -1,0 +1,49 @@
+.header-site{
+    background-image: url('../img/bg.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:#fff;
+    padding-top: 200px;
+    height: 100vh;
+}
+
+h1{font-size: 5em;}
+
+.conteudo-site{
+    padding-top: 100px;
+    height: 100vh;
+}
+
+.img-site{
+    background-image: url('../img/bg2.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:#fff;
+    padding-top: 80px;
+    height: 50vh;
+}
+
+.rodape{
+    background-color: #333;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.thumbnail{
+    position: relative;
+    overflow: hidden;
+}
+
+.thumbnail img{
+    transition:all ease-in 500ms;
+}
+
+.thumbnail img:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
