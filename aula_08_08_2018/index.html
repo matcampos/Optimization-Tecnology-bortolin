@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parallax - JS</title>
+    <style>
+        body {
+            margin: 0px;
+            background: url(img/bg.jpg) fixed;
+            width: 100%;
+            background-size: cover;
+            height: auto;
+        }
+
+        h1 {
+            color: transparent;
+        }
+
+        article {
+            position: absolute;
+        }
+
+        .img-parallax {
+            position: fixed;
+            width: 100%;
+            height: 5000px;
+        }
+
+        #layer1 {
+            background: url(img/iron.png) no-repeat 100px 30px;
+            z-index: 999;
+        }
+
+        #layer2 {
+            background: url(img/rock_2.png) no-repeat 0px 0px;
+        }
+
+        #layer3 {
+            background: url(img/rock_3.png) no-repeat 500px 200px;
+        }
+
+        #layer4 {
+            background: url(img/rock_1.png) no-repeat -120px 400px;
+        }
+
+        #layer5 {
+            background: url(img/rock_2.png) no-repeat 900px 550px;
+        }
+    </style>
+
+    <script>
+        efeito = () => {
+            // declarando variaveis
+            var layer1 = document.getElementById('layer1');
+            var layer2 = document.getElementById('layer2');
+            var layer3 = document.getElementById('layer3');
+            var layer4 = document.getElementById('layer4');
+            var layer5 = document.getElementById('layer5');
+
+            // aplicando as posições
+            layer1.style.right = -(window.pageYOffset / 2) + 'px';
+            layer2.style.top = -(window.pageYOffset / 2) + 'px';
+            layer3.style.top = -(window.pageYOffset / 10) + 'px';
+            layer4.style.top = -(window.pageYOffset / 1) + 'px';
+            layer5.style.top = -(window.pageYOffset / 4) + 'px';
+        }
+
+        window.addEventListener("scroll", efeito, false);
+    </script>
+</head>
+
+<body>
+    <section>
+        <div id="layer1" class="img-parallax"></div>
+        <div id="layer2" class="img-parallax"></div>
+        <div id="layer3" class="img-parallax"></div>
+        <div id="layer4" class="img-parallax"></div>
+        <div id="layer5" class="img-parallax"></div>
+        <div id="layer6" class="img-parallax"></div>
+        <div id="layer7" class="img-parallax"></div>
+    </section>
+
+    <article>
+        <script>
+            for (let i = 1; i < 100; i++) {
+                document.write(`<h1>texto qualquer ${i}</h1>`);
+            }
+        </script>
+    </article>
+</body>
+
+</html>

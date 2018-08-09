@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM - JS</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>
+            String e manipulação básica do DOM
+        </h1>
+
+        <p id="mensagem"></p>
+        <p>Conteúdo feito em JS:
+            <b></b>
+        </p>
+        <p id="exemplo01"></p>
+        <p class="exemplo02"></p>
+
+        <h2>Qualquer coisa aqui...</h2>
+        <p id="exemplo02">Outra coisa...
+            <b></b>
+        </p>
+    </div>
+    <script>
+        'use strict'
+
+        let tecnologia = "html e css";
+
+        document.getElementById('mensagem').textContent = tecnologia;
+        document.querySelector("b").textContent = "DOM";
+        document.querySelector("#exemplo01").textContent = "FIAP";
+
+        document.querySelector(".exemplo02").textContent = "Aclimação";
+
+        let recebevalor = document.querySelector('h1').textContent;
+        console.log(recebevalor);
+        let ex02 = document.querySelector('#exemplo02 b');
+        ex02.textContent = "javaScript";
+    </script>
+</body>
+
+</html>
