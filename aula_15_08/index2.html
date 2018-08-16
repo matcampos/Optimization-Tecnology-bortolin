@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trabalhando com Array</title>
+</head>
+
+<body>
+    <div id="saida1"></div>
+    <script>
+        'use strict'
+        let massas = ["Macarrão", "Ravioli", "Pizza"];
+        let frutas = new Array("Goiaba", "Banana", "Maça");
+
+        console.log(massas[1]);
+        var pessoas = [];
+        pessoas[0] = prompt("Primeira Pessoa");
+        pessoas[1] = prompt("Segunda Pessoa");
+        pessoas[2] = prompt("Terceira Pessoa");
+
+        var frase = `A ${pessoas[0]}, almoçou ${massas[1]} e comeu sobremesa de uma ${frutas[1]}`;
+        console.log(frase)
+        document.getElementById('saida1').textContent = frase;
+
+    </script>
+</body>
+
+</html>

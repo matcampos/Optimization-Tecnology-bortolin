@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trabalhando com Array</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Trabalhando com array (vetor/matriz)</h1>
+        <div id="herois"></div>
+        <p>Herois preferidos:
+            <i></i>
+        </p>
+        <p>Quantidade de herois:
+            <b></b>
+        </p>
+        <ul>
+            <li id="primeiro"></li>
+            <li id="segundo"></li>
+            <li id="terceiro"></li>
+        </ul>
+
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    <script>
+        'use strict'
+        let herois = ["hulk", "Homem de ferro", "Homem Aranha", "Wolverine"];
+
+        document.getElementById("herois").textContent = herois
+        document.querySelector("p i").textContent = herois[1];
+        let lengthHerois = herois.length;
+        document.querySelector("p b").textContent = lengthHerois;
+
+        let variasCoisas = [10, "Fiap", 12.35, "<h1> Olá Mundo</h2>", new Date()];
+        variasCoisas.forEach(v => {
+            console.log(v)
+        })
+
+        //Matriz de array com duas dimensões
+
+        let programas = [
+            ["word", "excel"],
+            ["Photoshop", "Illustrator", "Fireworks"],
+            ["Sublime", "VisualCode"]
+        ]
+
+        let cursos = ["php", "java", "javascript", "html"]
+        document.querySelector('ol li:nth-child(1)').textContent = cursos[0];
+        document.querySelector('ol li:nth-child(2)').textContent = cursos[1];
+        document.querySelector('ol li:nth-child(3)').textContent = cursos[2];
+        console.log(programas[0][1])
+    </script>
+</body>
+
+</html>
