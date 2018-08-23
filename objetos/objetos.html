@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS - Criação de objetos</title>
+</head>
+
+<body>
+    <h1>Trabalhando com objetos em JS</h1>
+
+    <p>
+        Objetos são coleções de dados não ordenados, constituido por um nome e um valor. Objetos possuem propriedades (ou atributos)
+        e métodos (ou comportamentos / funções).
+    </p>
+    <hr>
+    <div id="exemplo-1"></div>
+    <div id="exemplo-2"></div>
+    <div id="exemplo-3"></div>
+
+    <script>
+        "use strict"
+        //Exemplo 1 - Criando um objeto com propriedades
+        let livro = {
+            titulo: "O senhor dos aneis",
+            paginas: 450,
+            autor: "J.R.R Tolkien",
+            genero: "Aventura",
+            volume: 3,
+            'numero de edicoes': 5
+        };
+
+        console.log(livro.titulo);
+        console.log(livro.autor);
+        console.log(livro.titulo);
+        console.log(livro["numero de edicoes"]);
+        console.log(Object.keys(livro));
+
+        let ex01 = document.getElementById("exemplo-1");
+
+        ex01.textContent = `O ${livro.titulo} foi criado por ${livro.autor}`;
+
+
+        //EXEMPLO - 02 Múltiplos valores e estruturas
+        let smartphone = {
+            sistema: "Android",
+            fabricante: "ASUS",
+            modelo: "Zenfone 3 max",
+            adicionais: ["Radio", "NFC", "wifi", "USB", "entrada", "Fone"],
+            camera: {
+                resolucao: '10 megapixels',
+                foco: ["automatico", "manual"],
+                flash: "led"
+            }
+        };
+
+        console.log(smartphone.sistema); // android
+        console.log(smartphone.adicionais[1]);
+        console.log(smartphone.camera.resolucao);
+        console.log(smartphone.camera.foco[1]);
+
+        let ex02 = document.getElementById('exemplo-2');
+        ex02.textContent = `O smartphone ${smartphone.fabricante} do modelo ${smartphone.modelo}, posssui uma camera de ${smartphone.camera.resolucao} e o foco ${smartphone.camera.foco[0]}`;
+
+    </script>
+</body>
+
+</html>
