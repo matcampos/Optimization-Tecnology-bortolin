@@ -56,6 +56,7 @@ $(() => {
 
     // jQuery 6
     $('#attr').click(() => {
-        $('.alvo').html('<a href="#">meu link</a>')
+        $('.alvo').html('<a href="#">meu link</a>');
+        $('.alvo a').attr({ 'href': 'https://www.fiap.com.br', 'title':'vai laa' });
     })
 });
