@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <title>Vue js</title>
+
+    <style>
+        .green {
+            color: green;
+        }
+
+        .blue {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{titulo}}</h1>
+        <img v-bind:src="carrega_imagem" v-bind:alt="nome_alt">
+        <h3 v-bind:class="valorCSS" :style="valorStyle">
+            Seguindo texto aqui!
+        </h3>
+    </div>
+
+    <div id="form">
+        <h1>{{titulo}}</h1>
+        <form action="https://www.fiap.com.br">
+            <!-- <button type="submit" v-on:click="carregar()">Carregar</button> -->
+            <button type="submit" @click.prevent.stop="carregar()">Carregar</button>
+        </form>
+    </div>
+
+        <template id="menu">
+                <ul>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                </ul>
+        </template>
+
+    <rodape id="rodape"></rodape>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                "titulo": "Exemplo de uma diretiva v-bind",
+                "carrega_imagem": "https://cdn4.buysellads.net/uu/1/21673/1538328304-Slack-pink_logo.png",
+                "nome_alt": "Aqui está o titulo da imagem",
+                valorCSS: "green",
+                valorStyle: [
+                    { 'border': '1px solid red' },
+                    { 'font-family': 'arial' },
+                    { 'font-size': '18px' }
+                ]
+            }
+        });
+
+        var form = new Vue({
+            el: "#form",
+            data: {
+                "titulo": "Exemplo de uma diretiva v-on",
+            },
+            //Regra de negocio/ logica / classes
+            methods: {
+                carregar() {
+                    alert('Carregando o site');
+                }
+            }
+        });
+
+        Vue.component('menu', { 'template': '#menu' })
+
+        Vue.component('menu', { 'rodape': '#rodape' })
+        var template = new Vue({
+            el: "#template",
+            data: {
+                "titulo": "Exemplo de uma diretiva v-on",
+            },
+        });
+
+
+    </script>
+</body>
+
+</html>
